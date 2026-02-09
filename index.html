@@ -1,15 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="uk">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram: @s_cash88</title>
+    <style>
+        body { background-color: #f1f1f1; font-family: -apple-system, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .card { background: white; padding: 40px; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); text-align: center; width: 280px; }
+        .tg-logo { width: 80px; height: 80px; margin-bottom: 20px; }
+        .name { font-size: 20px; font-weight: bold; margin-bottom: 5px; color: #222; }
+        .username { color: #707579; margin-bottom: 25px; }
+        .btn { background-color: #24A1DE; color: white; text-decoration: none; padding: 14px 20px; border-radius: 50px; font-weight: bold; display: block; }
+    </style>
     <script>
-        // Команда миттєвого відкриття Telegram
-        window.location.replace("tg://resolve?domain=s_cash88");
-        
-        // Резервний перехід через 0.5 сек, якщо додаток не встановлено
-        setTimeout(function() {
-            window.location.replace("https://t.me/s_cash88");
-        }, 500);
+        function go() {
+            window.location.replace("tg://resolve?domain=s_cash88");
+            setTimeout(function() { window.location.replace("https://t.me/s_cash88"); }, 500);
+        }
+        window.onload = go;
     </script>
 </head>
-<body style="background: #000;"></body>
+<body>
+    <div class="card">
+        <img class="tg-logo" src="https://telegram.org/img/t_logo.png">
+        <div class="name">Менеджер S</div>
+        <div class="username">@s_cash88</div>
+        <a href="javascript:void(0)" onclick="go()" class="btn">ВІДКРИТИ ЧАТ</a>
+    </div>
+</body>
 </html>
